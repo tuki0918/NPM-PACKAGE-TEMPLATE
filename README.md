@@ -1,6 +1,6 @@
 # NPM-PACKAGE-TEMPLATE
 
-## NOTE
+## Setup
 
 1. Run `npm ci`
 2. Update `package.json`
@@ -8,7 +8,7 @@
 3. Update `LICENSE`
     - Required updates: `author`
 
-## COMMAND
+## Development
 
 ```bash
 # test
@@ -17,7 +17,7 @@ npm run test
 npm run check:fix
 ```
 
-## RELEASE
+## Release
 
 1. Set the secret environment variable: `NPM_TOKEN`
     - [Using secrets in GitHub Actions](https://docs.github.com/ja/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions)
@@ -25,3 +25,8 @@ npm run check:fix
     - Use the `npm version` command
 3. Release the package
     - [How to create a release](https://docs.github.com/ja/repositories/releasing-projects-on-github/managing-releases-in-a-repository#creating-a-release)
+
+## Trusted Publishing (Recommended)
+
+- [Trusted publishing for npm packages](https://docs.npmjs.com/trusted-publishers)
+- [Migrate to npm trusted publishing with OIDC](https://github.com/tuki0918/NPM-PACKAGE-TEMPLATE/issues/1)
